@@ -53,4 +53,5 @@ buck-out/
 # */constants/api.js
 # Bundle artifact
 *.jsbundle
-*constants/api.js
+#ignore this file 
+# *constants/api.js
