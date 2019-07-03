@@ -10,12 +10,13 @@ class SearchResults extends Component {
   }
   render() {
     return(
+      // HERE the Problem (you dont know the JESON tree/path)
       <View style={styles.searchResultsContainer}>     
-        {this.props.results.map((result, key) => (
+        {this.props.results.map((Search, key) => (
           <TouchableOpacity 
-            onPress={() => {Linking.openURL(result.formattedUrl) }}
+            onPress={() => {Linking.openURL(Search.formattedUrl) }}
           >
-            <Text key={key}>{result.title}</Text>
+            <Text key={Search}>{Title}</Text>
           </TouchableOpacity>
          ))}
        </View>

@@ -7,8 +7,8 @@ import {connect} from 'react-redux';
 import {searchResults} from "../../actions";
 
 const styles = require('./SearchBarStyles');
-const cx = '012040760514751621405:3qggxrt9tk8';
-const apiURL = 'https://www.googleapis.com/customsearch/v1'
+const cx = '009069714977778037875:eoqhnbkf2si';
+const apiURL = 'https://http://www.omdbapi.com/'
 
 class SearchBar extends Component {
   constructor(props) {
@@ -18,7 +18,7 @@ class SearchBar extends Component {
     }
   }
   searchOnMedium = () => {
-    let URL = apiURL + '?key=' + API_KEY + '&cx=' + cx + '&q=' + this.state.searchTerm;
+    let URL = apiURL + '?s=' + this.state.searchTerm + '&apikey=' + API_KEY;
     fetch(URL, {
       method: 'GET',
       headers: {
@@ -27,7 +27,7 @@ class SearchBar extends Component {
       }
     }).then((response) => {
       response.json().then((data) => {
-        this.props.searchResults(data.items);
+        this.props.searchResults(data.Title);
       })
     }).catch((error) => console.log(error));
   }
