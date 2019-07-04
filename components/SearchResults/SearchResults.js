@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Linking, Text, TouchableOpacity, View , Image} from 'react-native';
+import {Linking, Text, TouchableOpacity, View , Image,ScrollView} from 'react-native';
 
 import {connect} from 'react-redux';
 
@@ -12,7 +12,9 @@ class SearchResults extends Component {
 
   render() {
     return(
+      
       <View style={styles.searchResultsContainer}>
+        <ScrollView >
         {this.props.Search.map((Search, key) => (
           <TouchableOpacity 
             key={key}
@@ -28,6 +30,7 @@ class SearchResults extends Component {
         />
           </TouchableOpacity>
           ))}
+          </ScrollView>
       </View>
     )
   }

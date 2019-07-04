@@ -5,6 +5,8 @@ const deviceWidth = Dimensions.get('window').width;
 
 module.exports = StyleSheet.create({
   searchResultsContainer: {
+    marginTop: 41,
+    paddingTop:41,
     width: deviceWidth - 20,
     alignItems: 'center',
     flex: 9
@@ -25,8 +27,8 @@ fontSize:20,
 color:'black',
   },
   Image:{
-    width: (deviceWidth - 30) / 4,
-    height: (deviceWidth - 30) / 2
+    width: (deviceWidth + 30) / 4,
+    height: (deviceWidth + 30) / 2
   }
   // poster:{
   //   width: 20 ,

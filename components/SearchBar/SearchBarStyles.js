@@ -12,6 +12,8 @@ module.exports = StyleSheet.create({
     height: 50,
     borderBottomWidth: 2,
     marginVertical: 10,
+    // marginTop: 40,
+    paddingTop:40,
     borderColor: 'lightgray',
     flex: 1
   },
