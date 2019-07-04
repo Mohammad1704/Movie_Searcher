@@ -13,14 +13,14 @@ class SearchResults extends Component {
   render() {
     return(
       <View style={styles.searchResultsContainer}>
-        {this.props.results.map((result, key) => (
+        {this.props.Search.map((Search, key) => (
           <TouchableOpacity 
             key={key}
-            onPress={() => { Linking.openURL(result.formattedUrl) }}
+            onPress={() => { Linking.openURL(Search.Poster) }}
             style={styles.resultLink}
           >
-            <Text>{result.title}</Text>
-            <Text>{result.title}</Text>
+            <Text>{Search.Title}</Text>
+            <Text>{Search.Title}</Text>
           </TouchableOpacity>
           ))}
       </View>
@@ -30,7 +30,7 @@ class SearchResults extends Component {
 
 function mapStateToProps(state) {
   return {
-    results: state.results
+    Search: state.Search
   };
 }
 

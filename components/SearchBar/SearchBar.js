@@ -9,7 +9,7 @@ import axios from 'axios';
 
 const styles = require('./SearchBarStyles');
 const cx = '009069714977778037875:eoqhnbkf2si';
-const apiURL = 'https://www.googleapis.com/customsearch/v1'
+const apiURL = 'http://www.omdbapi.com/?';
 
 class SearchBar extends Component {
   constructor(props) {
@@ -19,7 +19,7 @@ class SearchBar extends Component {
     }
   }
   searchOnMedium = async () => {
-    let URL = apiURL + '?key=' + API_KEY + '&cx=' + cx + '&q=' + this.state.searchTerm;
+    let URL = apiURL + 'apikey=' + API_KEY + '&s=' + this.state.searchTerm;
     // fetch(URL, {
     //   method: 'GET',
     //   headers: {
@@ -36,6 +36,7 @@ class SearchBar extends Component {
     // }).catch((error) => console.log(error));
 
     const res = await axios.get(URL);
+    console.log('hello');
     console.log(res);
     this.props.searchResults(res.data.items);
   }

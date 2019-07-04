@@ -1,8 +1,8 @@
 export const SEARCH_RESULTS = 'SEARCH_RESULTS';
 
-export function searchResults(results) {
+export function searchResults(Search) {
   return {
     type: SEARCH_RESULTS,
-    results
+    Search
   }
 }
