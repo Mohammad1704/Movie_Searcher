@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Linking, Text, TouchableOpacity, View} from 'react-native';
+import {Linking, Text, TouchableOpacity, View , Image} from 'react-native';
 
 import {connect} from 'react-redux';
 
@@ -19,8 +19,13 @@ class SearchResults extends Component {
             onPress={() => { Linking.openURL(Search.Poster) }}
             style={styles.resultLink}
           >
-            <Text>{Search.Title}</Text>
-            <Text>{Search.Title}</Text>
+            <Text style={styles.Title} >{Search.Title}</Text>
+            <Text>{Search.Year}</Text>
+            <Image
+          style={ styles.Image }
+          resizeMode='contain'
+          source={{uri:(Search.Poster)}}
+        />
           </TouchableOpacity>
           ))}
       </View>

@@ -38,7 +38,7 @@ class SearchBar extends Component {
     const res = await axios.get(URL);
     console.log('hello');
     console.log(res);
-    this.props.searchResults(res.data.items);
+    this.props.searchResults(res.data.Search);
   }
 
   render() {

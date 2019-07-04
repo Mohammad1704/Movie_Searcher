@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import SearchBar from './components/SearchBar/SearchBar';
 import SearchResults from './components/SearchResults/SearchResults';
-
+import styled from 'styled-components';
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
 import rootReducer from './reducers';

@@ -1,3 +1,5 @@
+import styled from 'styled-components';
+
 const React = require('react-native');
 const { Dimensions, StyleSheet } = React;
 
@@ -32,3 +34,4 @@ module.exports = StyleSheet.create({
     height: 40
   }
 })
+
