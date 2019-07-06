@@ -18,7 +18,7 @@ class SearchBar extends Component {
       searchTerm: ''
     }
   }
-  searchOnMedium = async () => {
+  searchOnOmdb = async () => {
     let URL = apiURL + 'apikey=' + API_KEY + '&s=' + this.state.searchTerm;
     // fetch(URL, {
     //   method: 'GET',
@@ -54,7 +54,7 @@ class SearchBar extends Component {
         />
         <TouchableOpacity
           style={styles.textSearchButton}
-          onPress={() => this.searchOnMedium()}
+          onPress={() => this.searchOnOmdb()}
         >
           {/* <FontAwesome name="search" size={16} color="#000"/> */}
         </TouchableOpacity>
