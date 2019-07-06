@@ -13,13 +13,13 @@ module.exports = StyleSheet.create({
   },
   resultLink: {
     display: 'flex',
-    backgroundColor: '#ddd',
+    backgroundColor: '#45f34f', // change color here 
     borderRadius: 5,
     height: 40,
-    width: deviceWidth - 10,
+    width: deviceWidth - 20,
     marginVertical: 5,
     padding: 5,
-    alignItems: 'center',
+    alignItems: 'baseline',
     justifyContent: 'center'
   },
   Title:{
