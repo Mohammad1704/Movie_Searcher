@@ -5,8 +5,8 @@ const deviceWidth = Dimensions.get('window').width;
 
 module.exports = StyleSheet.create({
   searchResultsContainer: {
-    marginTop: 41,
-    paddingTop:41,
+    marginTop: 0,
+    paddingTop:0,
     width: deviceWidth - 20,
     alignItems: 'center',
     flex: 9

@@ -11,7 +11,7 @@ module.exports = StyleSheet.create({
     alignItems: 'center',
     height: 50,
     borderBottomWidth: 2,
-    marginVertical: 10,
+    marginVertical: 0,
     // marginTop: 40,
     paddingTop:40,
     borderColor: 'lightgray',
