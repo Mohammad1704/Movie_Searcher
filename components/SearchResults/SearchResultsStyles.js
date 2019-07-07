@@ -15,11 +15,11 @@ module.exports = StyleSheet.create({
     display: 'flex',
     backgroundColor: '#45f34f', // change color here 
     borderRadius: 5,
-    height: 40,
+    height: 150,     // change size here
     width: deviceWidth - 20,
     marginVertical: 5,
     padding: 5,
-    alignItems: 'baseline',
+    alignItems: 'flex-start',
     justifyContent: 'center'
   },
   Title:{
