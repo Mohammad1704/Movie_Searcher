@@ -15,7 +15,7 @@ export default class App extends React.Component {
   render() {
     return (
       <Provider store={store}>
-        <View style={styles.container}>
+        <View style={styles.Header}>
           <SearchBar/>
           <SearchResults/>
         </View>
@@ -25,10 +25,11 @@ export default class App extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
+  Header: {
+    flex: 1,   //tag flex_problem
+    // paddingTop :40,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    // justifyContent: 'center',
   },
 });

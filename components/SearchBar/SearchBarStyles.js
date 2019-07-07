@@ -30,8 +30,8 @@ module.exports = StyleSheet.create({
     flex: 1,
     backgroundColor: '#99D711',
     borderRadius: 5,
-    alignItems: 'center',
-    justifyContent: 'center',
+    // alignItems: 'center',
+    // justifyContent: 'center',
     padding: 10,
     height: 40
   }

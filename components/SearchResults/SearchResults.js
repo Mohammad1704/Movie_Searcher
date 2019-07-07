@@ -14,7 +14,7 @@ class SearchResults extends Component {
     return(
       
       <View style={styles.searchResultsContainer} 
-      //  resizeMode="contain"
+      // resizeMode='contain'
       >
         <ScrollView >
         {this.props.Search.map((Search, key) => (
@@ -26,14 +26,7 @@ class SearchResults extends Component {
             <Text style={styles.Title} >{Search.Title}</Text>
             <Text>{Search.Year}</Text>
             <Image
-          style={{ borderRadius:5,
-    flex: 1,
-    alignSelf: 'stretch',
-    
-    width: 150,
-    height: undefined
-  }}
-          // resizeMode='contain'   // this resizeMode have no visul effect
+          style={styles.Poster}
           source={{uri:(Search.Poster)}}
         />
           </TouchableOpacity>

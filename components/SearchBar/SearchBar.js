@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {TextInput, TouchableOpacity, View} from 'react-native';
-// import {FontAwesome} from '@expo/vector-icons';
 import {API_KEY} from '../../constants/api.js';
 
 import {connect} from 'react-redux';
@@ -20,23 +19,7 @@ class SearchBar extends Component {
   }
   searchOnOmdb = async () => {
     let URL = apiURL + 'apikey=' + API_KEY + '&s=' + this.state.searchTerm;
-    // fetch(URL, {
-    //   method: 'GET',
-    //   headers: {
-    //     Accept: 'application/json',
-    //     'Content-Type': 'application/json',
-    //   }
-    // }).then((response) => {
-    //   console.log('hello');
-    //   response.json().then((data) => {
-    //     this.props.searchResults(data.items.title);
-    //     console.log(data);
-    //     console.log(data.items.title);
-    //   })
-    // }).catch((error) => console.log(error));
-
     const res = await axios.get(URL);
-    console.log('hello');
     console.log(res);
     this.props.searchResults(res.data.Search);
   }
@@ -46,7 +29,7 @@ class SearchBar extends Component {
 
       <View style={styles.searchBarContainer}>
         <TextInput
-          placeholder='Enter your search terms'
+          placeholder='Enter the movie‘s name '
           style={styles.textInputSearch}
           underlineColorAndroid={'transparent'}
           onChangeText={(searchTerm) => this.setState({ searchTerm })}
@@ -56,7 +39,6 @@ class SearchBar extends Component {
           style={styles.textSearchButton}
           onPress={() => this.searchOnOmdb()}
         >
-          {/* <FontAwesome name="search" size={16} color="#000"/> */}
         </TouchableOpacity>
       </View>
     )
