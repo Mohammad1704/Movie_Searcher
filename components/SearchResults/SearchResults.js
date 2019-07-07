@@ -26,9 +26,10 @@ class SearchResults extends Component {
             <Text style={styles.Title} >{Search.Title}</Text>
             <Text>{Search.Year}</Text>
             <Image
-          style={{
+          style={{ borderRadius:5,
     flex: 1,
     alignSelf: 'stretch',
+    
     width: 150,
     height: undefined
   }}

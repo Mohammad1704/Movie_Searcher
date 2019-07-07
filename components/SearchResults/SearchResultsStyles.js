@@ -5,6 +5,7 @@ const deviceWidth = Dimensions.get('window').width;
 
 module.exports = StyleSheet.create({
   searchResultsContainer: {
+    backgroundColor: 'white', // change color here 
     marginTop: 0,
     paddingTop:0,
     width: deviceWidth - 20,
@@ -13,7 +14,7 @@ module.exports = StyleSheet.create({
   },
   resultLink: {
     display: 'flex',
-    backgroundColor: '#45f34f', // change color here 
+    backgroundColor: '#F1F3F7', // change color here 
     borderRadius: 5,
     height: 150,     // change size here
     width: deviceWidth - 20,

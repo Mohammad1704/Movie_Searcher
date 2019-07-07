@@ -28,7 +28,7 @@ module.exports = StyleSheet.create({
   },
   textSearchButton: {
     flex: 1,
-    backgroundColor: 'lightgray',
+    backgroundColor: '#99D711',
     borderRadius: 5,
     alignItems: 'center',
     justifyContent: 'center',
