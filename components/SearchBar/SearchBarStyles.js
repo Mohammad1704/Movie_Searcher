@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 
 const React = require('react-native');
 const { Dimensions, StyleSheet } = React;
@@ -12,7 +11,6 @@ module.exports = StyleSheet.create({
     height: 50,
     borderBottomWidth: 2,
     marginVertical: 0,
-    // marginTop: 40,
     paddingTop:40,
     borderColor: 'lightgray',
     flex: 1
@@ -30,8 +28,6 @@ module.exports = StyleSheet.create({
     flex: 1,
     backgroundColor: '#99D711',
     borderRadius: 5,
-    // alignItems: 'center',
-    // justifyContent: 'center',
     padding: 10,
     height: 40
   }

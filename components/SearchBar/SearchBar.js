@@ -1,17 +1,14 @@
 import React, {Component} from 'react';
 import {TextInput, TouchableOpacity, View} from 'react-native';
 
-import { Icon,Button, ThemeProvider } from 'react-native-elements';
+import { Icon} from 'react-native-elements';
   
-
-import {API_KEY} from '../../constants/api.js';
-
+import {API_KEY} from '../../constants/api.js'; 
 import {connect} from 'react-redux';
 import {searchResults} from "../../actions";
 import axios from 'axios';
 
 const styles = require('./SearchBarStyles');
-const cx = '009069714977778037875:eoqhnbkf2si';
 const apiURL = 'http://www.omdbapi.com/?';
 
 class SearchBar extends Component {
@@ -44,9 +41,7 @@ class SearchBar extends Component {
   name='search'
   color='#F1F3F7'
 />
-
         </TouchableOpacity>
-        
       </View>
       
     )

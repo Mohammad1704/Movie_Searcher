@@ -14,7 +14,6 @@ class SearchResults extends Component {
     return(
       
       <View style={styles.searchResultsContainer} 
-      // resizeMode='contain'
       >
         <ScrollView >
         {this.props.Search.map((Search, key) => (
