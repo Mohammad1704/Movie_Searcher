@@ -23,12 +23,12 @@ class SearchResults extends Component {
             onPress={() => { Linking.openURL(Search.Poster) }}
             style={styles.resultLink}
           >
-            <Text style={styles.Title} >{Search.Title}</Text>
-            <Text>{Search.Year}</Text>
-            <Image
+             <Image
           style={styles.Poster}
           source={{uri:(Search.Poster)}}
         />
+            <Text style={styles.Title} >{Search.Title}</Text>
+            <Text style={styles.Year} >{Search.Year}</Text>
           </TouchableOpacity>
           ))}
           </ScrollView>
