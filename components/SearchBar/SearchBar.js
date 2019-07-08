@@ -1,5 +1,9 @@
 import React, {Component} from 'react';
 import {TextInput, TouchableOpacity, View} from 'react-native';
+
+import { Icon,Button, ThemeProvider } from 'react-native-elements';
+  
+
 import {API_KEY} from '../../constants/api.js';
 
 import {connect} from 'react-redux';
@@ -26,7 +30,7 @@ class SearchBar extends Component {
 
   render() {
     return (
-
+    
       <View style={styles.searchBarContainer}>
         <TextInput
           placeholder='Enter the movie‘s name '
@@ -35,12 +39,16 @@ class SearchBar extends Component {
           onChangeText={(searchTerm) => this.setState({ searchTerm })}
           value={this.state.searchTerm}
         />
-        <TouchableOpacity
-          style={styles.textSearchButton}
-          onPress={() => this.searchOnOmdb()}
-        >
+        <TouchableOpacity style={styles.textSearchButton} onPress={() => this.searchOnOmdb()}>
+      <Icon
+  name='search'
+  color='#F1F3F7'
+/>
+
         </TouchableOpacity>
+        
       </View>
+      
     )
   }
 }

@@ -29,6 +29,7 @@ class SearchResults extends Component {
         />
             <Text style={styles.Title} >{Search.Title}</Text>
             <Text style={styles.Year} >{Search.Year}</Text>
+            <Text style={styles.Year} >{Search.Type}</Text>
           </TouchableOpacity>
           ))}
           </ScrollView>
