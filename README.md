@@ -1,7 +1,7 @@
 
 # Movie_Searcher
 using OMDB API
-react native app with redux 
+react native app with redux and react-native-elements package for icons
 ## Demo
 https://www.youtube.com/watch?v=HBE9ck_KDZ0
 
