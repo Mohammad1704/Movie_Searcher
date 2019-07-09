@@ -15,4 +15,4 @@ this app use API from `http://www.omdbapi.com/` with API key so you have to regi
 export const API_KEY='<YOUR_API_KEY>'; 
 
 ```
-now your api key connected to the `URL` in `searchOnOmdb` methode ( inside `SearchBar.js` file)
+now your api key connected to the `URL` in `searchOnOmdb` methode ( inside `SearchBar.js` file).
